@@ -252,18 +252,18 @@ int main(void) {
     printf("Now creating and running %d job(s)!\n\n", JOBS);
  
     // create our threads
-    pthread_create(&CPUthreads[0],  NULL, manageCpuPhase,      (void *)(long) 1);
-    pthread_create(&CPUthreads[1],  NULL, manageCpuPhase,      (void *)(long) 2);
-    pthread_create(&CPUthreads[2],  NULL, manageCpuPhase,      (void *)(long) 3);
-    pthread_create(&CPUthreads[3],  NULL, manageCpuPhase,      (void *)(long) 4);
-    pthread_create(&CPUthreads[4],  NULL, manageCpuPhase,      (void *)(long) 5);
-    pthread_create(&CPUthreads[5],  NULL, manageCpuPhase,      (void *)(long) 6);
-    pthread_create(&CPUthreads[6],  NULL, manageCpuPhase,      (void *)(long) 7);
-    pthread_create(&CPUthreads[7],  NULL, manageCpuPhase,      (void *)(long) 8);
-    pthread_create(&CPUthreads[8],  NULL, manageIO,            (void *)(long) 9);
-    pthread_create(&CPUthreads[9],  NULL, manageIO,            (void *)(long) 10);
-    pthread_create(&CPUthreads[10], NULL, manageIO,            (void *)(long) 11);
-    pthread_create(&CPUthreads[11], NULL, manageIO,            (void *)(long) 12);
+    pthread_create(&CPUthreads[0], NULL, manageCpuPhase, (void *)(long) 1);
+    pthread_create(&CPUthreads[1], NULL, manageCpuPhase, (void *)(long) 2);
+    pthread_create(&CPUthreads[2], NULL, manageCpuPhase, (void *)(long) 3);
+    pthread_create(&CPUthreads[3], NULL, manageCpuPhase, (void *)(long) 4);
+    pthread_create(&CPUthreads[4], NULL, manageCpuPhase, (void *)(long) 5);
+    pthread_create(&CPUthreads[5], NULL, manageCpuPhase, (void *)(long) 6);
+    pthread_create(&CPUthreads[6], NULL, manageCpuPhase, (void *)(long) 7);
+    pthread_create(&CPUthreads[7], NULL, manageCpuPhase, (void *)(long) 8);
+    pthread_create(&CPUthreads[8], NULL, manageIO, (void *)(long) 9);
+    pthread_create(&CPUthreads[9], NULL, manageIO, (void *)(long) 10);
+    pthread_create(&CPUthreads[10], NULL, manageIO, (void *)(long) 11);
+    pthread_create(&CPUthreads[11], NULL, manageIO, (void *)(long) 12);
     pthread_create(&CPUthreads[12], NULL, manageJobSubmission, (void *)(long) 13);
     pthread_create(&CPUthreads[13], NULL, manageJobSubmission, (void *)(long) 14);
     pthread_create(&CPUthreads[14], NULL, manageJobSubmission, (void *)(long) 15);
